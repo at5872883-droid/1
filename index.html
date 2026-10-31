@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="topbar">
+  <a class="logo" href="#">БАНЯ<span>ДОМ</span></a>
+  <nav>
+    <a href="#catalog">Каталог</a>
+    <a href="#projects">Наши работы</a>
+    <a href="#order">Заказать</a>
+  </nav>
+  <a class="phone" href="tel:+790000000">+7 900-000-00-00</a>
+</div>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="tag">СОБСТВЕННОЕ ПРОИЗВОДСТВО</p>
+    <h1>Твоя баня.<br>Твои правила.</h1>
+    <p>Модульные бани под ключ — от проекта до установки на вашем участке.</p>
+    <a class="btn" href="#order">Рассчитать стоимость ↗</a>
+    <div class="facts">
+      <span>01 / Под заказ</span>
+      <span>02 / Доставка</span>
+      <span>03 / Установка</span>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=85" alt="Деревянный загородный дом">
+    <div class="image-label">Место для отдыха<br>в любое время года</div>
+  </div>
+</section>
+
+<section class="section" id="catalog">
+  <div class="section-heading">
+    <div>
+      <p class="tag">ВЫБЕРИ СВОЙ ФОРМАТ</p>
+      <h2>Популярные модели</h2>
+    </div>
+    <p>Каждую модель можно изменить<br>под ваши пожелания.</p>
+  </div>
+
+  <div class="cards">
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1449158743715-0a90ddc7d2d3?auto=format&fit=crop&w=900&q=85" alt="Компактная баня">
+      <div class="product-info">
+        <span>01 / КОМПАКТ</span>
+        <h3>Баня «Лесная»</h3>
+        <p>2 × 4 м · Для небольшой семьи</p>
+        <div class="price">От 450 000 ₽</div>
+        <button onclick="chooseModel('Баня Лесная')">Узнать подробнее ↗</button>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=900&q=85" alt="Модульная баня">
+      <div class="product-info">
+        <span>02 / СЕМЕЙНАЯ</span>
+        <h3>Баня «Сосна»</h3>
+        <p>2,4 × 6 м · Парная и зона отдыха</p>
+        <div class="price">От 690 000 ₽</div>
+        <button onclick="chooseModel('Баня Сосна')">Узнать подробнее ↗</button>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1449158743715-0a90ddc7d2d3?auto=format&fit=crop&w=900&q=85" alt="Большая баня">
+      <div class="product-info">
+        <span>03 / ПРЕМИУМ</span>
+        <h3>Баня «Север»</h3>
+        <p>3 × 7 м · Просторная комплектация</p>
+        <div class="price">От 950 000 ₽</div>
+        <button onclick="chooseModel('Баня Север')">Узнать подробнее ↗</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="custom" id="order">
+  <div>
+    <p class="tag">ИНДИВИДУАЛЬНЫЙ ПРОЕКТ</p>
+    <h2>Не нашли подходящую?<br>Создадим вашу.</h2>
+    <p>Подберём размер, планировку, отделку и комплектацию под ваш бюджет.</p>
+  </div>
+  <form id="orderForm">
+    <input id="model" placeholder="Какая баня вас интересует?">
+    <input id="name" placeholder="Ваше имя" required>
+    <input id="phoneInput" placeholder="Ваш телефон" required>
+    <button class="btn" type="submit">Отправить заявку ↗</button>
+    <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small>
+  </form>
+</section>
+
+<section class="section" id="projects">
+  <div class="section-heading">
+    <div>
+      <p class="tag">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</p>
+      <h2>Бани, которые уже радуют</h2>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1449158743715-0a90ddc7d2d3?auto=format&fit=crop&w=1000&q=85" alt="Проект бани">
+    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1000&q=85" alt="Загородный проект">
+  </div>
+</section>
+
+<footer>
+  <a class="logo" href="#">БАНЯ<span>ДОМ</span></a>
+  <p>Модульные бани под заказ</p>
+  <a href="tel:+79990000000">+7 999 000-00-00</a>
+</footer>
+<script src="script.js"></script>
